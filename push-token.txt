@@ -1,0 +1,7 @@
+step 1 - generate token in github (token classic)
+step 2 - delete github in credential manager
+step 3 - git config --global --unset credential.helper
+step 4 - git config --global credential.helper manager
+step 5 - authroize
+
+now u can push!
