@@ -1,0 +1,48 @@
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+div {
+    float: left;
+}
+
+.column {
+    float: left; /* Align columns side by side */
+    padding: 10px;
+}
+
+.large {
+    width: 50%; /* Large column takes half of the container's width */
+}
+
+.medium {
+    width: 30%; /* Medium column takes 30% of the container's width */
+}
+
+.small {
+    width: 20%; /* Small column takes 20% of the container's width */
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+}

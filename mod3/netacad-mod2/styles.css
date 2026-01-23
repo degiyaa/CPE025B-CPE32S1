@@ -1,0 +1,16 @@
+h1 {
+    color: cornflowerblue;
+}
+
+p {
+    color: salmon;
+}
+
+.vivid {
+    color: red;
+}
+
+.box {
+    border-style: solid;
+    border-color: lightblue;
+}
