@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A Survey Form</title>
+        <style>
+            body {
+                background-image: url(https://preview.redd.it/7fvhxloc2ze61.png?width=640&crop=smart&auto=webp&s=94d295d3aed6ae3a8fb9655e7756a93a00a98c5a);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                font-family: Arial, sans-serif;
+                margin: 40px;
+            }
+            label {
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+                color: salmon;
+            }
+            h1 {
+                font-weight: bold;
+                color: burlywood;
+            }
+            input {
+                margin-top: 5px;
+                width: 100%;
+                padding: 8px;
+            }
+            select {
+                margin-top: 5px;
+                width: 100%;
+                padding: 8px;
+            }
+            textarea {
+                margin-top: 5px;
+                width: 100%;
+                padding: 8px;
+                resize: vertical;
+            }
+            button {
+                margin-top: 5px;
+                width: 100%;
+                padding: 8px;
+            }
+            p {
+                font-weight: bold;
+                color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Header-->
+        <h1 id="title">COOKIES!</h1>
+        <p id="description"><strong>
+            This surveys collects basic information and preferences regarding C O O K I E S.
+        </strong>
+        </p>
+        
+        <!--Form Wrapper-->
+        <form id="survey-form">
+
+            <!--Name-->
+            <label id="name-label" for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter full cookie name"
+                required>
+
+            <!--Email-->
+            <label id="email-label" for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="COOKIES@email.com"
+                required>
+
+            <!--Number-->
+            <label id="number-label" for="number">Age</label>
+            <input
+                type="number"
+                id="number_input"
+                name="number"
+                placeholder="Enter age if you're allowed to eat C O O K I E S"
+                min="12"
+                max="60"
+                required>
+
+            <!--Dropdown-->
+            <label for="dropdown">Preferred COOKIES!!!</label>
+            <select id="dropdown" name="platform">
+                <option value="">-- Select a COOKIE</option>
+                <option value="chipped">Chipped!</option>
+                <option value="simple">Plain and Simple~</option>
+            </select>
+
+            <!--Radio Buttons-->
+            <p><strong>How big dem C O K I S</strong></p>
+            <label><input type="radio" name="size" value="smol">Smoll</label>
+            <label><input type="radio" name="size" value="kinda mid">Kinda mid</label>
+            <label><input type="radio" name="size" value="beeg">Beeg</label>
+            <label><input type="radio" name="size" value="swole">Swooole</label>
+            <label><input type="radio" name="size" value="awe">I am in awe of the size of this lad!</label>
+
+            <!--Checkboxes-->
+            <p><strong>U liek?</strong></p>
+            <label><input type="checkbox" value="melk">melk</label>
+            <label><input type="checkbox" value="muffin">muffinsd!?</label>
+            <label><input type="checkbox" value="candy">CANDIES???</label>
+            <label><input type="checkbox" value="just">just cookie!</label>
+
+            <!--Textarea-->
+            <p for="talk"><strong>Cookie talk</strong></label></p>
+            <textarea
+                id="talk"
+                name="talk"
+                rows="4"
+                placeholder="Talk about COOKIESSS!">
+            </textarea>
+
+            <!--Submit-->
+            <button type="submit" id="submit">Submit Thy Cookies...</button>
+        </form>
+    </body>
+</html> 
