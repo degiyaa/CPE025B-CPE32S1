@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            margin-top: 5px;
+            width: 100%;
+            padding: 8px;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <h1 id="title">Student Technology Survey</h1>
+    <p id="description">
+        This survey collects basic information and preferences regarding technology usage.
+    </p>
+
+    <!-- Form Wrapper -->
+    <form id="survey-form">
+
+        <!-- Name -->
+        <label id="name-label" for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter full name"
+            required
+        >
+
+        <!-- Email -->
+        <label id="email-label" for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="user@email.com"
+            required
+        >
+
+        <!-- Number -->
+        <label id="number-label" for="number">Age</label>
+        <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Enter your age"
+            min="18"
+            max="60"
+            required
+        >
+
+        <!-- Dropdown -->
+        <label for="dropdown">Preferred Platform</label>
+        <select id="dropdown" name="platform">
+            <option value="">-- Select an option --</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile Development</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p><strong>Experience Level</strong></p>
+        <label>
+            <input type="radio" name="experience" value="beginner">
+            Beginner
+        </label>
+        <label>
+            <input type="radio" name="experience" value="advanced">
+            Advanced
+        </label>
+
+        <!-- Checkboxes -->
+        <p><strong>Technologies Used</strong></p>
+        <label>
+            <input type="checkbox" value="html">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" value="css">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" value="javascript">
+            JavaScript
+        </label>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments</label>
+        <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Enter your comments here..."
+        ></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
