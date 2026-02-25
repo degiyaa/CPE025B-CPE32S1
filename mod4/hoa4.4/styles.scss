@@ -1,0 +1,117 @@
+$primary-color: #6a5acd;
+$accent-color: #20c997;
+$background-color: #f7f8fc;
+$text-color: #333;
+
+$border-radius: 10px;
+$padding: 20px;
+$font-stack: Arial, sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-style {
+  background: white;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.header {
+  background: $primary-color;
+  color: white;
+  padding: $padding;
+  text-align: center;
+}
+
+.navbar {
+  background: darken($primary-color, 10%);
+
+  ul {
+    @include flex-center;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+
+    li {
+      margin: 0 20px;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.container {
+  padding: $padding;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  @include card-style;
+
+  h2 {
+    color: $primary-color;
+  }
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  background: $accent-color;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    background: darken($accent-color, 10%);
+  }
+}
+
+.features {
+  ul {
+    padding-left: 20px;
+
+    li {
+      background: lighten($primary-color, 40%);
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.footer {
+  @include flex-center;
+  background: darken($primary-color, 20%);
+  color: white;
+  padding: 15px;
+}
