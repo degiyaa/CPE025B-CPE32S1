@@ -1,0 +1,91 @@
+/* 4. Readable Text */
+body {
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 1. Clear Navigation */
+.navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #0654b3;
+}
+.navigation-menu li {
+    margin: 0 20px;
+}
+.navigation-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.navigation-menu a:hover,
+.navigation-menu a:focus {
+    background-color: #003d80;
+    text-decoration: underline;
+}
+
+/* 3. Simple and Predictable Layouts */
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.sidebar {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+.main-content {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* 4. Readable Text */
+.large-text {
+    font-size: 20px;
+}
+.high-contrast-text {
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* 2. Identifiable Links */
+a {
+    color: #0654b3;
+    text-decoration: underline;
+}
+a:hover,
+a:focus {
+    color: #002766;
+}
+
+/* 5. Screen Reader Accessibility */
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0654b3;
+    color: #fff;
+}
